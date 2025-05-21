@@ -1,10 +1,11 @@
 $(document).ready(function () {
     // Slider
     var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 14,
-        slidesPerView: 3,
-        freeMode: true,
-        watchSlidesProgress: true,
+      spaceBetween: 14,
+      slidesPerView: 3,
+      freeMode: true,
+      watchSlidesProgress: true,
+      slideToClickedSlide: true,
     });
     var swiper2 = new Swiper(".mySwiper2", {
         spaceBetween: 14,

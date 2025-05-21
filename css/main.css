@@ -139,26 +139,32 @@ body {
 }
 .step-btn {
     font-family: "Montserrat", sans-serif;
-    background: #90BA17;
+    background-color: #1e73e8; /* синій як на скріншоті */
     color: #ffffff;
     width: 100%;
-    height: 50px;
+    height: 60px;
+    border-radius: 25px; /* заокруглені кути */
+    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 18px; /* трохи більший шрифт */
     font-weight: 700;
-    outline: none;
-    transition: .3s;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.step-btn:hover {
+    background-color: #155ec6; /* темніший синій при наведенні */
 }
 
 /* Form, comments */
 
+
+
 .comments-title {
     font-size: 20px;
     line-height: 26px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 .form-comments {
     padding: 14px 0 10px;
@@ -977,4 +983,114 @@ input[type=checkbox] {
     .congratulation-product--list {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+/* Видалити стрілки */
+.swiper-button-prev,
+.swiper-button-next {
+    display: none !important;
+}
+
+/* Прозорість превʼю */
+.swiper.mySwiper .swiper-slide {
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+/* Активний превʼю */
+.swiper.mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+    /* border: 2px solid #000; */
+    border-radius: 4px;
+}
+
+/* За бажанням: зменшення розміру превʼю */
+.swiper.mySwiper {
+    margin-top: 10px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.popup-notification {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.95);
+    z-index: 999;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 320px;
+    width: 100%; /* ✅ Додаємо ширину */
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    opacity: 0;
+    transition: opacity 0.9s ease, transform 0.9s ease;
+    pointer-events: none;
+    box-sizing: border-box; /* ✅ Не дає падінгам збільшувати ширину */
+}
+
+/* Активний стан */
+.popup-notification.show {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+    pointer-events: auto;
+}
+
+.popup-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.popup-text p {
+    margin: 2px 0;
+    line-height: 1.2;
+}
+
+.popup-close {
+    cursor: pointer;
+    margin-left: 20px;
+    color: #aaa;
+    font-weight: bold;
+}
+
+.rating-summary {
+    padding: 20px 14px;
+    background: #f5f7fa;
+    border-radius: 12px;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.rating-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.rating-value {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.rating-stars img {
+    width: 20px;
+    height: 20px;
+}
+
+.rating-subtext {
+    font-size: 14px;
+    color: #666;
 }

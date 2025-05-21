@@ -10,66 +10,94 @@
     <title>JBL Fravega</title>
 </head>
 
+
+
 <body>
 
-    <header class="header-block">
-        <div class="container">
-            <section class="header-block--content">
-                <nav class="header-list header-list--first">
-                    <a href="javascript:void(0);" class="header-item header-burger js-burger">
-                        <img src="images/burger.svg" alt="menú">
-                    </a>
-                     <div class="header-icons__item">
-                    <img width="100" class="logo" src="images/logo_n.svg" alt="">
-                   
-                </div>
-                </nav>
-                <nav class="header-list header-list--second">
-                    <a href="javascript:void(0);" class="header-item header-account">
-                        <img src="images/account.svg" alt="cuenta">
-                    </a>
-                    <a href="javascript:void(0);" class="header-item header-heart">
-                        <img src="images/heart.svg" alt="favoritos">
-                    </a>
-                    <a href="javascript:void(0);" class="header-item header-cart">
-                        <img src="images/cart.svg" alt="carrito">
-                    </a>
-                </nav>
-            </section>
-        </div>
-    </header>
+<header class="header-block">
+    <div class="container">
+        <section class="header-block--content"
+                 style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px; flex-wrap: nowrap;">
 
+            <!-- Логотип -->
+            <div class="header-logo" style="flex-shrink: 0;">
+                <img src="images/logo_n.svg" alt="logo" style="height: 28px;">
+            </div>
 
+            <!-- Пошук -->
+            <div class="header-search" style="position: relative; flex-grow: 1; max-width: 100%;">
+                <input
+                       type="text"
+                       placeholder="¿Qué estás buscando?"
+                       class="search-input"
+                       style="width: 100%; padding: 6px 36px 6px 12px; border-radius: 5px; border: 1px solid #ccc; box-sizing: border-box; font-size: 14px;">
+                <img
+                     src="images/search.svg"
+                     alt="search"
+                     style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; opacity: 0.6;">
+            </div>
+
+            <!-- Сердечко -->
+            <div class="header-heart" style="flex-shrink: 0;">
+                <a href="javascript:void(0);">
+                    <img src="images/heart.svg" alt="heart" style="width: 20px; height: 20px;">
+                </a>
+            </div>
+
+        </section>
+    </div>
+</header>
+<div class="rating-block" style="display: flex; align-items: center; padding: 12px 16px; gap: 6px; background: #fff;">
+    <div
+         style="display: flex; align-items: center; background-color: #f5f5f5; padding: 4px 10px; border-radius: 12px; font-size: 14px; font-weight: 500; color: #222;">
+
+        <!-- SVG зірки -->
+        <span style="display: flex; gap: 2px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                 viewBox="0 0 24 24" fill="#00A000">
+                <path d="M12 .587l3.668 7.568L24 9.748l-6 5.849L19.335 24
+                     12 19.897 4.665 24 6 15.597 0 9.748l8.332-1.593z" />
+            </svg>
+        </span>
+
+        <!-- Текстовий рейтинг -->
+        <span style="color: #000; font-weight: bold;">4.6</span>
+        <span style="color: #888; margin-left: 4px;">(4.8K)</span>
+    </div>
+</div>
     <main class="main-block">
         <div class="container">
             <section class="main-block--content">
                <h1 class="main-title">
-    ¡Sé de los primeros en Argentina!
+    En honor a su aniversario, ¡Noon anuncia una gran venta!
 </h1>
 <p class="main-text main-text--weight">
-    JBL y Fravega organizan un evento único para celebrar el lanzamiento del nuevo modelo: 100 personas afortunadas tendrán la oportunidad de comprar el último JBL Flip 6 por solo $2127 ARS!
+    ¡Ahora tenés una oportunidad única de conseguir las legendarias zapatillas New Balance 530 por solo 8 SAR!
 </p>
-<p class="main-text">
-    Sé uno de los primeros en tener un JBL Flip 6 en Argentina.
+<p class="main-text" style="color: rgba(0, 0, 0, 0.6);">
+    Noon ha hecho un acuerdo especial con la marca para ofrecerte este precio increíble. La promoción incluye 500 pares de
+    zapatillas disponibles en varios tamaños y colores.
 </p>
+<p class="main-text" style="color: rgba(0, 0, 0, 0.6);">Para conseguir tu par, responde 3 preguntas simples y elige las zapatillas de tus sueños.
+¡Apúrate! ¡La cantidad es limitada!</p>
 
                 <div class="main-block--sliders">
                     <div class="swiper mySwiper2">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="images/product-1.jpg">
+                                <img src="images/1.png">
                             </div>
                             <div class="swiper-slide">
-                                <img src="images/product-2.jpg">
+                                <img src="images/2.png">
                             </div>
                             <div class="swiper-slide">
-                                <img src="images/product-3.jpg">
+                                <img src="images/3.png">
                             </div>
                             <div class="swiper-slide">
-                                <img src="images/product-4.jpg">
+                                <img src="images/4.png">
                             </div>
                             <div class="swiper-slide">
-                                <img src="images/product-5.jpg">
+                                <img src="images/5.png">
                             </div>
                         </div>
                     </div>
@@ -83,28 +111,28 @@
                     <div thumbsSlider="" class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="images/product-1.jpg">
+                                <img src="images/1.png">
                             </div>
                             <div class="swiper-slide">
-                                <img src="images/product-2.jpg">
+                                <img src="images/2.png">
                             </div>
                             <div class="swiper-slide">
-                                <img src="images/product-3.jpg">
+                                <img src="images/3.png">
                             </div>
                             <div class="swiper-slide">
-                                <img src="images/product-4.jpg">
+                                <img src="images/4.png">
                             </div>
                             <div class="swiper-slide">
-                                <img src="images/product-5.jpg">
+                                <img src="images/5.png">
                             </div>
                         </div>
                     </div>
                 </div>
               <p class="main-text">
-    JBL BY HARMAN Flip 6 (Bluetooth)
+    Completa el formulario de solicitud para participar
 </p>
 <p class="main-text main-text--weight">
-    ¡Apurate, la cantidad de ofertas es limitada!
+    ¡Apurate, la cantidad de premios es limitada!
 </p>
 
 <ul class="step-list">
@@ -153,9 +181,47 @@
 
             <section class="comments-block--content">
                 <div class="comments-block--top">
+
+                    
                     <h2 class="comments-title">
-    Comentarios:
-</h2>
+                        Comentarios:
+                    </h2>
+                    <div class="rating-block" style="display: flex; align-items: center; padding: 12px 16px; gap: 6px; background: #fff;">
+                        <div style="display: flex; align-items: center; gap: 4px;">
+                            <span
+                                  style="font-weight: bold; color: #000; font-size: 26px; line-height: 1; transform: translateY(1px); margin-right: -2px;">4.6</span>
+                            <span style="display: flex; gap: 2px;">
+                                <!-- Повні зірки -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#00A000">
+                                    <path d="M12 .587l3.668 7.568L24 9.748l-6 5.849L19.335 24
+                                    12 19.897 4.665 24 6 15.597 0 9.748l8.332-1.593z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#00A000">
+                                    <path d="M12 .587l3.668 7.568L24 9.748l-6 5.849L19.335 24
+                                    12 19.897 4.665 24 6 15.597 0 9.748l8.332-1.593z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#00A000">
+                                    <path d="M12 .587l3.668 7.568L24 9.748l-6 5.849L19.335 24
+                                    12 19.897 4.665 24 6 15.597 0 9.748l8.332-1.593z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#00A000">
+                                    <path d="M12 .587l3.668 7.568L24 9.748l-6 5.849L19.335 24
+                                    12 19.897 4.665 24 6 15.597 0 9.748l8.332-1.593z" />
+                                </svg>
+                            
+                                <!-- Зелена половинка зліва -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                                    <!-- Сіра повна зірка -->
+                                    <path fill="#ccc" d="M12 .587l3.668 7.568L24 9.748l-6 5.849L19.335 24
+                                    12 19.897 4.665 24 6 15.597 0 9.748l8.332-1.593z" />
+                                    <!-- Зелена половинка зліва -->
+                                    <path fill="#00A000" d="M12 .587l-3.668 7.568L0 9.748l6 5.849L4.665 24
+                                    12 19.897V.587z" />
+                                </svg>
+                            </span>
+
+                        </div>
+                    </div>
                     <form id="formComments" class="form-comments" action="#" method="POST">
                         <div class="form-row">
                             <div class="form-icon">
@@ -600,7 +666,7 @@
         <div class="container">
             <section class="congratulation-block--content">
                 <div class="congratulation-img">
-                    <img src="images/product-win.png" alt="producto">
+                    <img src="images/box-prize.png" alt="producto">
                 </div>
                <h1 class="congratulation-title">
     ¡Genial, ganaste! ¡El JBL Flip 6 te espera! ¡Sigue las instrucciones!
@@ -867,7 +933,7 @@
     <div class="winoff-block" id="winoff-block">
         <div class="congrats-block--inner">
             <div class="congrats-block--content">
-                <div class="congratulation-img">
+                <div style="display: flex; justify-content: center;">
                     <img src="images/off-win.svg" alt="sin premio">
                 </div>
                 <h2 class="congrats-title">
@@ -902,6 +968,14 @@
             </ul>
         </div>
     </div>
+<div id="fake-popup" class="popup-notification">
+    <img src="images/1.png" alt="sneaker" class="popup-img">
+    <div class="popup-text">
+        <p><strong> عمر الداؤود</strong> from <a href="#">Saudi Arabia</a> <span class="popup-close">✖</span></p>
+        <p><strong style="color: #6c63ff;">New Balance 530</strong></p>
+        <p><strong id="popup-time" style="color: #0a0;">1 min 12 sek ✔</strong></p>
+    </div>
+</div>
 
 
     <a href="javascript:void(0);" class="question-btn js-question--btn">?</a>
@@ -912,6 +986,48 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src = "js/popup.js"></script>
+<script>
+    // Ініціалізація Swiper з превʼю
+    const mainSwiper = new Swiper('.mySwiper2', {
+        spaceBetween: 10,
+        thumbs: {
+            swiper: new Swiper('.mySwiper', {
+                spaceBetween: 10,
+                slidesPerView: 4,
+                watchSlidesProgress: true
+            })
+        }
+    });
+
+    const congratulationImg = document.querySelector('.congratulation-img img');
+    const boxesPrizeImgs = document.querySelectorAll('.boxes__prize img');
+
+    function updateSelectedImageEverywhere() {
+        const activeSlide = mainSwiper.slides[mainSwiper.activeIndex];
+        const selectedImg = activeSlide.querySelector('img');
+
+        if (selectedImg) {
+            const newSrc = selectedImg.src;
+
+            // Поставити картинку у блок привітання
+            if (congratulationImg) {
+                congratulationImg.src = newSrc;
+            }
+
+            // Поставити картинку у всі коробки (призи)
+            boxesPrizeImgs.forEach(img => {
+                img.src = newSrc;
+            });
+        }
+    }
+
+    // Одразу при завантаженні
+    updateSelectedImageEverywhere();
+
+    // При зміні слайду
+    mainSwiper.on('slideChange', updateSelectedImageEverywhere);
+</script>
 </body>
 
 </html>
