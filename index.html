@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <title>JBL Fravega</title>
+    <title>New Balance 530</title>
 </head>
 
 
@@ -669,31 +669,53 @@
                     <img src="images/box-prize.png" alt="producto">
                 </div>
                <h1 class="congratulation-title">
-    ¡Genial, ganaste! ¡El JBL Flip 6 te espera! ¡Sigue las instrucciones!
+    ¡Felicitaciones!
 </h1>
 <p class="congratulation-text">
-    ¡Ganaste un JBL Flip 6!
+    ¡Ganaste unas New Balance 530!
 </p>
                <h2 class="congratulation-subtitle">
                     Seleccioná el color:
                 </h2>
                 <ul class="congratulation-product--list">
-                    <li class="congratulation-product--item">
-                        <img src="images/color-1.jpg" alt="producto">
+                    <li class="congratulation-product--item active" style="opacity:1">
+                        <img src="images/1.png" alt="producto" onclick="selectPrizeImage('images/1.png', this)">
                     </li>
-                    <li class="congratulation-product--item">
-                        <img src="images/color-2.jpg" alt="producto">
+                    <li class="congratulation-product--item" style="opacity:0.3">
+                        <img src="images/2.png" alt="producto" onclick="selectPrizeImage('images/2.png', this)">
                     </li>
-                    <li class="congratulation-product--item">
-                        <img src="images/color-3.jpg" alt="producto">
+                    <li class="congratulation-product--item" style="opacity:0.3">
+                        <img src="images/3.png" alt="producto" onclick="selectPrizeImage('images/3.png', this)">
                     </li>
                 </ul>
                 <h2 class="congratulation-subtitle">
                 </h2>
 
-                <p class="congratulation-text">
-    Solo tenés 1 minuto y 39 segundos para reclamar tu premio.
-</p>
+<div class="congratulation-size-block">
+    <label class="congratulation-size-label">Scelta della taglia:</label>
+
+    <div class="custom-select-wrapper">
+        <div class="custom-select" onclick="toggleDropdown()">
+            <span id="selected-size">36</span>
+            <div class="custom-arrow"></div>
+        </div>
+
+        <ul class="custom-options" id="size-options">
+            <li data-value="36" onclick="selectSize('36', this)">36</li>
+            <li data-value="37" onclick="selectSize('37', this)">37</li>
+            <li data-value="38" onclick="selectSize('38', this)">38</li>
+            <li data-value="39" onclick="selectSize('39', this)">39</li>
+            <li data-value="40" onclick="selectSize('40', this)">40</li>
+            <li data-value="41" onclick="selectSize('41', this)">41</li>
+            <li data-value="42" onclick="selectSize('42', this)">42</li>
+            <li data-value="43" onclick="selectSize('43', this)">43</li>
+            <li data-value="44" onclick="selectSize('44', this)">44</li>
+            <li data-value="45" onclick="selectSize('45', this)">45</li>
+        </ul>
+    </div>
+</div>
+
+                <p class="congratulation-text" id="countdown">Solo tenés 2 minutos para reclamar tu premio.</p>
 <p class="congratulation-text">
     1. Hacé clic en "Ordenar" y seguí a la página de entrega.
 </p>
@@ -1027,6 +1049,96 @@
 
     // При зміні слайду
     mainSwiper.on('slideChange', updateSelectedImageEverywhere);
+</script>
+<script>
+    function selectPrizeImage(src, clickedImg) {
+        // Змінюємо головне зображення
+        const mainImg = document.querySelector('.congratulation-img img');
+        if (mainImg) {
+            mainImg.src = src;
+        }
+
+        // Активний клас до <li>
+        document.querySelectorAll('.congratulation-product--item').forEach(item => {
+            item.classList.remove('active');
+            item.style.opacity = '0.4'; // напівпрозорість
+        });
+
+        const selectedItem = clickedImg.closest('.congratulation-product--item');
+        selectedItem.classList.add('active');
+        selectedItem.style.opacity = '1'; // повна непрозорість
+    }
+</script>
+<script>
+    function toggleDropdown() {
+        const options = document.getElementById("size-options");
+        options.style.display = options.style.display === "block" ? "none" : "block";
+    }
+
+    function selectSize(size, element) {
+        // Встановити текст у головному полі
+        document.getElementById("selected-size").innerText = size;
+
+        // Скинути всі selected
+        document.querySelectorAll('#size-options li').forEach(li => {
+            li.classList.remove('selected');
+        });
+
+        // Позначити активним новий елемент
+        element.classList.add('selected');
+
+        // Сховати список
+        document.getElementById("size-options").style.display = "none";
+    }
+
+    // Автоматично виділяє активний розмір при першому завантаженні
+    window.addEventListener('DOMContentLoaded', function () {
+        const selectedSize = document.getElementById("selected-size").innerText;
+        const options = document.querySelectorAll('#size-options li');
+
+        options.forEach(option => {
+            if (option.innerText === selectedSize) {
+                option.classList.add('selected');
+            }
+        });
+    });
+
+    // Закрити список при кліку поза селектом
+    document.addEventListener("click", function (event) {
+        const select = document.querySelector(".custom-select-wrapper");
+        if (!select.contains(event.target)) {
+            document.getElementById("size-options").style.display = "none";
+        }
+    });
+</script>
+<script>
+    // Стартове значення: 2 хв = 120 секунд
+    let totalSeconds = 2 * 60;
+
+    const countdownEl = document.getElementById("countdown");
+
+    function updateCountdown() {
+        const minutes = Math.floor(totalSeconds / 60);
+        const seconds = totalSeconds % 60;
+
+        // Форматуємо: 1 хвилина і 09 секунд, наприклад
+        const formattedTime = `${minutes} minuto${minutes !== 1 ? 's' : ''} y ${seconds < 10 ? '0' : ''}${seconds} segundos`;
+
+        // Виводимо
+        countdownEl.innerText = `Solo tenés ${formattedTime} para reclamar tu premio.`;
+
+        // Коли залишилось 2 сек — зупиняємо
+        if (totalSeconds > 2) {
+            totalSeconds--;
+        } else {
+            clearInterval(timerInterval);
+            countdownEl.innerText = "Solo tenés 0 minutos y 02 segundos para reclamar tu premio.";
+        }
+    }
+
+    // Запускаємо одразу
+    updateCountdown();
+    const timerInterval = setInterval(updateCountdown, 1000);
 </script>
 </body>
 
