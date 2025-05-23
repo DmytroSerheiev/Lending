@@ -16,35 +16,37 @@
 
 <header class="header-block">
     <div class="container">
-        <section class="header-block--content"
-                 style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px; flex-wrap: nowrap;">
-
-            <!-- Логотип -->
-            <div class="header-logo" style="flex-shrink: 0;">
-                <img src="images/logo_n.svg" alt="logo" style="height: 28px;">
+    <section class="header-block--content" style="flex-direction: column; align-items: stretch; gap: 8px; padding: 10px 0;">
+        <div style="display: flex; align-items: center; justify-content: space-between; padding: 0 14px;">
+            <!-- Бургер -->
+            <div class="header-burger">
+                <img src="images/burger.svg" alt="menu" style="width: 24px; height: 24px;">
             </div>
-
-            <!-- Пошук -->
-            <div class="header-search" style="position: relative; flex-grow: 1; max-width: 100%;">
-                <input
-                       type="text"
-                       placeholder="¿Qué estás buscando?"
-                       class="search-input"
-                       style="width: 100%; padding: 6px 36px 6px 12px; border-radius: 5px; border: 1px solid #ccc; box-sizing: border-box; font-size: 14px;">
-                <img
-                     src="images/search.svg"
-                     alt="search"
-                     style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; opacity: 0.6;">
+    
+            <!-- Лого -->
+            <div class="header-logo">
+                <img src="images/logo.svg" alt="logo" style="height: 50px;">
             </div>
-
-            <!-- Сердечко -->
-            <div class="header-heart" style="flex-shrink: 0;">
-                <a href="javascript:void(0);">
-                    <img src="images/heart.svg" alt="heart" style="width: 20px; height: 20px;">
-                </a>
+    
+            <!-- Кошик -->
+            <div class="header-cart">
+                <img src="images/cart.svg" alt="cart" style="width: 24px; height: 24px;">
             </div>
-
-        </section>
+        </div>
+    
+        <!-- Пошук -->
+        <div class="header-search" style="position: relative; padding: 0 14px;">
+            <input
+                   type="text"
+                   placeholder="Rechercher"
+                   class="search-input"
+                   style="width: 100%; padding: 10px 36px 10px 40px; border-radius: 30px; border: 1px solid #ccc; font-size: 14px;">
+            <img
+                 src="images/search.svg"
+                 alt="search"
+                 style="position: absolute; left: 24px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; opacity: 0.6;">
+        </div>
+    </section>
     </div>
 </header>
 
@@ -52,17 +54,15 @@
         <div class="container">
             <section class="main-block--content">
                <h1 class="main-title">
-    En honor a su aniversario, ¡Noon anuncia una gran venta!
+   C’est une révolution. Et vous pouvez être le premier au Maroc !
 </h1>
 <p class="main-text main-text--weight">
-    ¡Ahora tenés una oportunidad única de conseguir las legendarias zapatillas New Balance 530 por solo 8 SAR!
+    Vous avez désormais une chance unique d'obtenir les célèbres baskets New Balance 530 pour seulement 19,99 MAD la paire ! Dechatlon a conclu un accord spécial avec la marque pour vous proposer ce prix incroyable. La promotion comprend 500 paires de baskets disponibles en différentes tailles et couleurs.
 </p>
 <p class="main-text" style="color: rgba(0, 0, 0, 0.6);">
-    Noon ha hecho un acuerdo especial con la marca para ofrecerte este precio increíble. La promoción incluye 500 pares de
-    zapatillas disponibles en varios tamaños y colores.
+    Pour obtenir votre paire, répondez à 3 questions simples et choisissez les baskets de vos rêves. Dépêchez-vous ! 
 </p>
-<p class="main-text" style="color: rgba(0, 0, 0, 0.6);">Para conseguir tu par, responde 3 preguntas simples y elige las zapatillas de tus sueños.
-¡Apúrate! ¡La cantidad es limitada!</p>
+<p class="main-text" style="color: rgba(0, 0, 0, 0.6);">Les quantités sont limitées !</p>
 
 <div class="rating-block" style="display: flex; align-items: center; padding: 12px 16px; gap: 6px; background: #fff;">
     <div
@@ -131,49 +131,49 @@
                     </div>
                 </div>
               <p class="main-text">
-    Completa el formulario de solicitud para participar
+    Remplissez le formulaire de participation pour prendre part
 </p>
 <p class="main-text main-text--weight">
-    ¡Apurate, la cantidad de premios es limitada!
+    Dépêchez-vous, le nombre de prix est limité !
 </p>
 
 <ul class="step-list">
     <li class="step-item step-active">
         <h3 class="step-title">
-            <strong> Pregunta 1 de 3 </strong> ¿Alguna vez participaste en ofertas limitadas como esta?
+            <strong>Question 1 sur 3</strong> Aimez-vous la marque New Balance ?
         </h3>
         <div class="step-buttons">
             <a href="javascript:void(0);" class="step-btn js-btn--next">
-                Sí
+                Oui
             </a>
             <a href="javascript:void(0);" class="step-btn js-btn--next">
-                No
+                Non
             </a>
                         </div>
                     </li>
                     <li class="step-item">
                         <h3 class="step-title">
-    <strong> Pregunta 2 de 3</strong> ¿Te gustaría ver más de estas ofertas únicas?
+    <strong>Question 2 sur 3</strong> Avez-vous des vêtements de la marque New Balance ?
 </h3>
 <div class="step-buttons">
     <a href="javascript:void(0);" class="step-btn js-btn--next">
-        Sí    
+        Oui    
     </a>
     <a href="javascript:void(0);" class="step-btn js-btn--next">
-        No
+        Non
     </a>
 </div>
 </li>
 <li class="step-item">
     <h3 class="step-title">
-        <strong>Pregunta 3 de 3</strong> ¿Eres cliente de Fravega?
+         <strong>Question 3 sur 3</strong> Vous vivez au Maroc ?
     </h3>
     <div class="step-buttons">
         <a href="javascript:void(0);" class="step-btn js-btn--final">
-            Sí
+            Oui
         </a>
         <a href="javascript:void(0);" class="step-btn js-btn--final">
-            No
+            Non
         </a>
                         </div>
                     </li>
@@ -308,15 +308,15 @@
                             </div>
                             <div class="comments-union">
                                 <div class="comments-middle">
-    <h3>Santiago Fernández <span class="verified-purchase">✔ Verified Purchase</span></h3>
+    <h3>Mohamed Nassiri <span class="verified-purchase">✔ Verified Purchase</span></h3>
     
-    <p>¿Alguien ya lo recibió? ¿Lo consiguieron por solo $2127 ARS?</p>
+    <p>Quelqu'un en a-t-il déjà reçu un ? L'avez-vous obtenu pour seulement 19,99 MAD ?</p>
 </div>
 <div class="comments-bottom">
     <div class="comments-bottom--left">
-        <span>6 h</span>
-        <span>me gusta</span>
-        <span>Responder</span>
+         <span>6 h</span>
+         <span>J'aime</span>
+         <span>Répondre</span>
     </div>
     <div class="comments-bottom--right">
         <ul class="comments-likes--list">
@@ -334,14 +334,14 @@
     </div>
     <div class="comments-union">
         <div class="comments-middle">
-            <h3>María Gómez<span class="verified-purchase">✔ Verified Purchase</span></h3>
-            <p>Sí, el representante me contactó durante el día, verificó los datos y dijo que enviaría los documentos en tres días. Estoy esperando.</p>
+            <h3>Youssef El Khalfi<span class="verified-purchase">✔ Verified Purchase</span></h3>
+            <p>Oui, le responsable m'a contacté dans la journée, a vérifié les données et a dit qu'il enverra sous 3 jours. J'attends.</p>
         </div>
         <div class="comments-bottom">
             <div class="comments-bottom--left">
-                <span>2 h</span>
-                <span>me gusta</span>
-                <span>Responder</span>
+         <span>3 h</span>
+         <span>J'aime</span>
+         <span>Répondre</span>
             </div>
                                     <div class="comments-bottom--right">
                                         <ul class="comments-likes--list">
@@ -362,17 +362,17 @@
                             </div>
                             <div class="comments-union">
                               <div class="comments-middle">
-    <h3>Lucas Rodríguez<span class="verified-purchase">✔ Verified Purchase</span></h3>
-    <p>¡Ya lo tengo y me encanta!)))</p>
+    <h3>Ibrahim El Issaul<span class="verified-purchase">✔ Verified Purchase</span></h3>
+    <p>Je l'ai déjà eu))))</p>
     <div class="comments-middle--img">
         <img src="images/comment-1.jpg" alt="comentario">
     </div>
 </div>
 <div class="comments-bottom">
     <div class="comments-bottom--left">
-        <span>17 min</span>
-        <span>me gusta</span>
-        <span>Responder</span>
+         <span>18 min</span>
+         <span>J'aime</span>
+         <span>Répondre</span>
     </div>
     <div class="comments-bottom--right">
         <ul class="comments-likes--list">
@@ -395,14 +395,14 @@
                             </div>
                             <div class="comments-union">
                                 <div class="comments-middle">
-    <h3>Soporte Fravega<span class="verified-purchase">✔ Verified Purchase</span></h3>
-    <p>¡Muchas gracias por tus comentarios! ¡Significa mucho para nosotros!</p>
+    <h3>Support Dechatlon</span></h3>
+    <p>Merci pour vos commentaires, ils nous sont très précieux.</p>
 </div>
 <div class="comments-bottom">
     <div class="comments-bottom--left">
-        <span>1 min</span>
-        <span>Me gusta</span>
-        <span>Responder</span>
+                                        <span>1 min</span>
+                                        <span>J'aime</span>
+                                        <span>Répondre</span>
     </div>
                                     <div class="comments-bottom--right">
                                         <ul class="comments-likes--list">
@@ -423,17 +423,17 @@
                             </div>
                             <div class="comments-union">
                                <div class="comments-middle">
-    <h3>Martín López<span class="verified-purchase">✔ Verified Purchase</span></h3>
-    <p>Nunca había escrito un comentario, pero quería compartir mi experiencia. Esto fue lo que pasó: visité el sitio web, respondí las preguntas y me dieron la oportunidad de participar. Pensé que era una estafa, así que releí todo, envié mis datos y esperé. Dos horas después, una señora me llamó para confirmar mis datos y me dijo que había ganado un premio. Dijo que nuestro mensajero lo entregaría en tres días. Me sorprendió mucho recibirlo al día siguiente. En conclusión, no tengas miedo de intentarlo.</p>
+    <h3>Mustafa Ait<span class="verified-purchase">✔ Verified Purchase</span></h3>
+    <p>Je n'avais jamais écrit de commentaires auparavant, mais j'ai décidé de partager). Voici comment cela s'est passé : je suis allé sur le site, j'ai répondu aux questions et j'ai eu la possibilité de participer. Je pensais que c'était une arnaque, j'ai tout relu, envoyé mes données et attendu.... Après 2 heures, une fille m'appelle, vérifie l'exactitude de mes données et dit : “Félicitations, vous avez gagné le prix. Notre coursier vous le livrera dans les 3 jours.” Vous ne pouvez pas imaginer combien j'étais étonné quand je l'ai reçu le lendemain.</p>
     <div class="comments-middle--img">
         <img src="images/comment-2.jpg" alt="comentario">
     </div>
 </div>
 <div class="comments-bottom">
     <div class="comments-bottom--left">
-        <span>2 h</span>
-        <span>Me gusta</span>
-        <span>Responder</span>
+                                        <span>2 h</span>
+                                        <span>J'aime</span>
+                                        <span>Répondre</span>
                                     </div>
                                     <div class="comments-bottom--right">
                                         <ul class="comments-likes--list">
@@ -454,14 +454,14 @@
                             </div>
                             <div class="comments-union">
 <div class="comments-middle">
-    <h3>Soporte Fravega<span class="verified-purchase">✔ Verified Purchase</span></h3>
-    <p>¡Muchas gracias por tus lindos comentarios! ¡Nos alegra mucho que lo hayas disfrutado!</p>
+    <h3>Support Dechatlon</h3>
+    <p>Merci pour vos commentaires, nous sommes très heureux</p>
 </div>
 <div class="comments-bottom">
     <div class="comments-bottom--left">
-        <span>23 h</span>
-        <span>Me gusta</span>
-        <span>Responder</span>
+                                        <span>23 h</span>
+                                        <span>J'aime</span>
+                                        <span>Répondre</span>
     </div>
                                     <div class="comments-bottom--right">
                                         <ul class="comments-likes--list">
@@ -482,14 +482,14 @@
                             </div>
                             <div class="comments-union">
                               <div class="comments-middle">
-    <h3>Matías González<span class="verified-purchase">✔ Verified Purchase</span></h3>
-    <p>Supongo que tuvo suerte. Voy a intentarlo yo también.</p>
+    <h3>Rachid Berrada<span class="verified-purchase">✔ Verified Purchase</span></h3>
+    <p>Le gars a eu de la chance), maintenant je vais tenter ma chance.</p>
 </div>
 <div class="comments-bottom">
     <div class="comments-bottom--left">
-        <span>6 h</span>
-        <span>Me gusta</span>
-        <span>Responder</span>
+                                        <span>6 h</span>
+                                        <span>J'aime</span>
+                                        <span>Répondre</span>
                                     </div>
                                     <div class="comments-bottom--right">
                                         <ul class="comments-likes--list">
@@ -510,14 +510,14 @@
                             </div>
                             <div class="comments-union">
                                <div class="comments-middle">
-    <h3>José Ramírez<span class="verified-purchase">✔ Verified Purchase</span></h3>
-    <p>Lo probé hace un día y todavía estoy esperando...</p>
+    <h3>Karim Hamidou<span class="verified-purchase">✔ Verified Purchase</span></h3>
+    <p>J'ai essayé il y a un jour et j'attends toujours....</p>
 </div>
 <div class="comments-bottom">
     <div class="comments-bottom--left">
-        <span>2 h</span>
-        <span>Me gusta</span>
-        <span>Responder</span>
+                                        <span>2 h</span>
+                                        <span>J'aime</span>
+                                        <span>Répondre</span>
     </div>
                                     <div class="comments-bottom--right">
                                         <ul class="comments-likes--list">
@@ -535,14 +535,14 @@
                             </div>
                             <div class="comments-union">
                                 <div class="comments-middle">
-    <h3>Soporte Fravega<span class="verified-purchase">✔ Verified Purchase</span></h3>
-    <p>Estimado Lucio Martínez, nos aseguraremos de que reciba su premio, la reputación de nuestra tienda está garantizada y no debe preocuparse. Ya hemos enviado el premio.</p>
+    <h3>Support Dechatlon</h3>
+ <p>Cher Karim Hamidou, nous veillerons à ce que vous receviez votre prix. La réputation de notre magasin est prouvée et digne de confiance, vous n'avez pas à vous inquiéter. Nous avons expédié.</p>
 </div>
 <div class="comments-bottom">
     <div class="comments-bottom--left">
-        <span>1 h</span>
-        <span>Me gusta</span>
-        <span>Responder</span>
+                                        <span>1 h</span>
+                                        <span>J'aime</span>
+                                        <span>Répondre</span>
     </div>
                                     <div class="comments-bottom--right">
                                         <ul class="comments-likes--list">
@@ -563,17 +563,17 @@
                             </div>
                             <div class="comments-union">
                                <div class="comments-middle">
-    <h3>Santiago Fernández<span class="verified-purchase">✔ Verified Purchase</span></h3>
-    <p>¿Dónde hago clic en el botón "Comprar"?</p>
+    <h3>Zakaria Belhaj<span class="verified-purchase">✔ Verified Purchase</span></h3>
+    <p>بصراحة شريتهم غير على خطرهم ولكن تفاجأت! ستيل كلاسيكي زوين و خفاف بزاف. من أحسن السباطات لي شريتهم فهاد الأعوام. ديال عشرة على عشرة!</p>
     <div class="comments-middle--img">
         <img src="images/comment-3.jpg" alt="comentario">
     </div>
 </div>
 <div class="comments-bottom">
     <div class="comments-bottom--left">
-        <span>7 h</span>
-        <span>Me gusta</span>
-        <span>Responder</span>
+                                        <span>7 h</span>
+                                        <span>J'aime</span>
+                                        <span>Répondre</span>
     </div>
                                     <div class="comments-bottom--right">
                                         <ul class="comments-likes--list">
@@ -729,13 +729,13 @@
                     <img src="images/box-prize.png" alt="producto">
                 </div>
                <h1 class="congratulation-title">
-    ¡Felicitaciones!
+     Génial, vous avez gagné ! Les New Balance 530 vous attendent ! Suivez les instructions !
 </h1>
 <p class="congratulation-text">
-    ¡Ganaste unas New Balance 530!
+    Vous avez gagné des New Balance 530
 </p>
                <h2 class="congratulation-subtitle">
-                    Seleccioná el color:
+                    Sélectionnez la couleur:
                 </h2>
 <div class="swiper congratulationSwiper">
     <div class="swiper-wrapper">
@@ -760,7 +760,7 @@
                 </h2>
 
 <div class="congratulation-size-block">
-    <label class="congratulation-size-label">Scelta della taglia:</label>
+    <label class="congratulation-size-label">Sélectionnez votre taille:</label>
 
     <div class="custom-select-wrapper">
         <div class="custom-select" onclick="toggleDropdown()">
@@ -769,6 +769,7 @@
         </div>
 
         <ul class="custom-options" id="size-options">
+            <li data-value="36" onclick="selectSize('36', this)">35</li>
             <li data-value="36" onclick="selectSize('36', this)">36</li>
             <li data-value="37" onclick="selectSize('37', this)">37</li>
             <li data-value="38" onclick="selectSize('38', this)">38</li>
@@ -779,23 +780,35 @@
             <li data-value="43" onclick="selectSize('43', this)">43</li>
             <li data-value="44" onclick="selectSize('44', this)">44</li>
             <li data-value="45" onclick="selectSize('45', this)">45</li>
+            <li data-value="45" onclick="selectSize('45', this)">46</li>
         </ul>
     </div>
 </div>
 
                 <p class="congratulation-text">
-                    Solo tenés <span id="countdown" style="color: red;">2 minutos</span> para reclamar tu premio.
+                    Vous avez seulement  <span id="countdown" style="color: red;">1 minute</span> pour réclamer votre prix.
                 </p>
 <p class="congratulation-text">
-    1. Hacé clic en "Ordenar" y seguí a la página de entrega.
+   1. Cliquez sur "Commander Maintenant" et passez à la page de livraison.
 </p>
 <p class="congratulation-text">
-    2. Reservé una oportunidad para vos. Tenés 3 minutos para completar el formulario y reclamar tu recompensa.
+   2. J'ai réservé une opportunité pour vous. Vous avez 3 minutes pour remplir le formulaire et réclamer votre prix.
 </p>
 <p class="congratulation-text">
-    3. Tu pedido será entregado en 2 a 3 días después de la confirmación. La entrega es gratis.
+   3. Votre commande sera livrée dans les 2-3 jours après confirmation. La livraison est gratuite.
 </p>
-<a href="{offer}" class="btn-main">Ordenar</a>
+<a href="{offer}" class="btn-main" style="
+    font-size: 16px;
+    font-weight: 700;
+    padding: 18px 26px;
+    text-align: center;
+    white-space: nowrap;
+    line-height: 1;
+    display: block;
+    margin: 20px auto 0;
+    max-width: 255px;
+
+">Commander Maintenant</a>
             </section>
         </div>
     </section>
@@ -808,15 +821,15 @@
                     <ul class="basket-top--list">
                         <li class="basket-top--item active">
                             <span>1</span>
-                            <p>Sorteo</p>
+                            <p>Lotterie</p>
                         </li>
                         <li class="basket-top--item active">
                             <span>2</span>
-                            <p>Detalles del pedido</p>
+                            <p>Détails de la commande</p>
                         </li>
                         <li class="basket-top--item">
                             <span>3</span>
-                            <p>Pago</p>
+                            <p>Paiement</p>
                         </li>
                     </ul>
                 </div>
@@ -826,17 +839,17 @@
                         <div class="basket-middle--img">
                             <img src="images/product-win.png" alt="producto">
                         </div>
-                        <p class="basket-middle--text">JBL Flip 6 Sony</p>
+                        <p class="basket-middle--text">New Balance 530</p>
                     </div>
                     <div class="basket-middle--bottom">
                         <p class="basket-middle--num">
                             1
                         </p>
-                        <p class="basket-middle--price">$2127 ARS</p>
+                        <p class="basket-middle--price">19,99 MAD</p>
                     </div>
                 </div>
                 <p class="basket-notification">
-                   Por favor completá el formulario de entrega a continuación: *direcciones, números de teléfono, etc.
+                  Veuillez remplir le formulaire de livraison ci-dessous : *adresses, numéros de téléphone, etc.
                 </p>
 
 
@@ -844,42 +857,42 @@
 
                     <form id="formRegister" class="form-list" action="#" method="POST">
                         <div class="form-item">
-                            <label class="form-label" for="username">Nombre</label>
+                            <label class="form-label" for="username">Prénom</label>
                             <input type="text" class="form-point" id="username" name="username">
                         </div>
 
                         <div class="form-item">
-                            <label class="form-label" for="lastname">Apellido</label>
+                            <label class="form-label" for="lastname">Nom</label>
                             <input type="text" class="form-point" id="lastname" name="lastname">
                         </div>
 
                         <div class="form-item">
-                            <label class="form-label" for="address">Dirección</label>
+                            <label class="form-label" for="address">Adresse</label>
                             <input type="text" class="form-point" id="address" name="address">
                         </div>
 
                         <div class="form-item">
-                            <label class="form-label" for="city">Ciudad</label>
+                            <label class="form-label" for="city">Ville</label>
                             <input type="text" class="form-point" id="city" name="city">
                         </div>
 
                         <div class="form-item">
-                            <label class="form-label" for="state">Provincia</label>
+                            <label class="form-label" for="state">Région</label>
                             <input type="text" class="form-point" id="state" name="state">
                         </div>
 
                         <div class="form-item">
-                            <label class="form-label" for="zip">Código postal</label>
+                            <label class="form-label" for="zip">Code Postal</label>
                             <input type="text" class="form-point" id="zip" name="zip">
                         </div>
 
                         <div class="form-item">
-                            <label class="form-label" for="phone">Teléfono</label>
+                            <label class="form-label" for="phone">Numéro de téléphone</label>
                             <input type="tel" class="form-point" id="phone" name="phone">
                         </div>
 
                         <div class="form-item">
-                            <label class="form-label" for="email">Correo electrónico</label>
+                            <label class="form-label" for="email">E-mail</label>
                             <input type="email" class="form-point" id="email" name="email">
                         </div>
 
@@ -887,10 +900,10 @@
                             <input type="checkbox" class="form-check" id="checks" name="checks">
                             <label for="checks" class="form-check--label">
                                 <span></span>
-                                 Acepto la política de privacidad y doy consentimiento para el procesamiento de datos personales, pedidos y devoluciones.
+                                J'accepte la politique de confidentialité et donne mon consentement au traitement des données personnelles, commandes et retours.
                             </label>
                         </div>
-                        <button type="submit" class="btn-main btn-main--arrow">Ir al pago</button>
+                        <button type="submit" class="btn-main btn-main--arrow">Aller au paiement</button>
                     </form>
 
                     <a href="{offer}" class="btn-final"></a>
@@ -927,51 +940,51 @@
             <ul class="question-list">
                <li class="question-item js-question">
     <p class="question-item--first">
-        ¿Cuánto tiempo debo esperar para recibir mi premio?
-    </p>
-    <p class="question-item--second">
-        El tiempo habitual de espera es de 2 a 5 días hábiles.
-    </p>
-</li>
-<li class="question-item js-question">
-    <p class="question-item--first">
-        ¿Hay costos ocultos para Likesies?
-    </p>
-    <p class="question-item--second">
-        Absolutamente no. Una vez que ganás el premio e ingresás tus datos, nosotros nos encargamos del resto.
-    </p>
-</li>
-<li class="question-item js-question">
-    <p class="question-item--first">
-        Soy ganador, ¿por qué tengo que responder a las preguntas?
-    </p>
-    <p class="question-item--second">
-        Todavía no sos ganador, pero sos uno de los 100 seleccionados para intentar ganar nuestro premio.
-    </p>
-</li>
-<li class="question-item js-question">
-    <p class="question-item--first">
-        ¿Recibiré el premio si gano?
-    </p>
-    <p class="question-item--second">
-        Primero tenés que proveer la dirección de envío y tus datos, luego pagar el procesamiento de la entrega.
-    </p>
-</li>
-<li class="question-item js-question">
-    <p class="question-item--first">
-        ¿Por qué tengo que pagar $2127 ARS por el premio?
-    </p>
-    <p class="question-item--second">
-        Cobramos $2127 ARS por manejo y envío.
-    </p>
-</li>
-<li class="question-item js-question">
-    <p class="question-item--first">
-        No puedo usar mi tarjeta de crédito o teléfono, ¿la transacción no se realiza?
-    </p>
-    <p class="question-item--second">
-        Si no podés usar tu tarjeta o teléfono, tu banco está bloqueando la transacción: debés aprobarla en tu cuenta bancaria.
-    </p>
+                        Combien de temps devrai-je attendre ma récompense ?
+                    </p>
+                    <p class="question-item--second">
+                        Cela prend généralement de 2 à 5 jours ouvrables.
+                    </p>
+                </li>
+                <li class="question-item js-question">
+                    <p class="question-item--first">
+                        Y a-t-il des coûts cachés ?
+                    </p>
+                    <p class="question-item--second">
+                        Absolument pas. Une fois que vous avez gagné le prix et saisi vos informations, nous nous occupons du reste.
+                    </p>
+                </li>
+                <li class="question-item js-question">
+                    <p class="question-item--first">
+                        Pourquoi devrais-je répondre aux questions si je suis gagnant ?
+                    </p>
+                    <p class="question-item--second">
+                       Vous n'êtes pas encore gagnant, mais vous faites partie des 100 personnes sélectionnées pour essayer de gagner notre prix.
+                    </p>
+                </li>
+                <li class="question-item js-question">
+                    <p class="question-item--first">
+                        Vaiserai-je un prix en cas de victoire ?
+                    </p>
+                    <p class="question-item--second">
+                        Tout d'abord, vous devez fournir votre adresse de livraison et vos informations de contact, puis payer pour le traitement de la livraison.
+                    </p>
+                </li>
+                <li class="question-item js-question">
+                    <p class="question-item--first">
+                        Pourquoi devrais-je payer 19,99 MAD pour une récompense ?
+                    </p>
+                    <p class="question-item--second">
+                       Nous prélevons 19,99 MAD pour le traitement et le transport.
+                    </p>
+                </li>
+                <li class="question-item js-question">
+                    <p class="question-item--first">
+                       Impossible d'utiliser ma carte de crédit ou mon téléphone et la transaction ne passe pas ?
+                    </p>
+                    <p class="question-item--second">
+                        Si vous ne pouvez pas utiliser votre carte de crédit ou votre téléphone, votre banque bloque la transaction : vous devez l'approuver sur votre compte bancaire.
+                    </p>
                 </li>
             </ul>
         </div>
@@ -979,22 +992,22 @@
 
     <div class="loading-block" id="loading-block">
         <div class="loading-block--content">
-            <h2 class="loading-title">
-    Se están verificando tus respuestas
-</h2>
-<div class="loading-img">
-    <div class="loading--gif"></div>
-</div>
-<ul class="loading-list">
-    <li class="loading-item">
-        ¡Has respondido 3/3 preguntas!
-    </li>
-    <li class="loading-item">
-        No hay duplicados con tu dirección IP.
-    </li>
-    <li class="loading-item">
-        Estás calificado.
-    </li>
+ <h2 class="loading-title">
+                Vos réponses sont vérifiées
+            </h2>
+            <div class="loading-img">
+                <div class="loading--gif"></div>
+            </div>
+            <ul class="loading-list">
+               <li class="loading-item">
+                    Vous avez répondu à 3/3 questions !
+                </li>
+                <li class="loading-item">
+                    Aucune entrée en double de votre adresse IP.
+                </li>
+                <li class="loading-item">
+                    Vous êtes qualifié.
+                </li>
             </ul>
         </div>
     </div>
@@ -1006,17 +1019,17 @@
                     <img src="images/big-box.png" alt="caja" class="box-shake">
                 </div>
                <h2 class="congrats-title">
-    ¡Sos increíble! ¡Las respuestas son correctas!
-</h2>
-<p class="congrats-text">
-    Hoy podés comprar el JBL Flip 6 por solo $2127 ARS!
-</p>
-<p class="congrats-text">
-    Simplemente elegí la caja de regalo correcta.
-</p>
-<p class="congrats-text">
-    Tenés 3 intentos, ¡buena suerte!
-</p>
+                    Vous êtes incroyable ! Les réponses sont correctes !
+                </h2>
+                <p class="congrats-text">
+                    Aujourd'hui, vous pouvez acheter les New Balance 530 pour seulement 19,99 MAD !
+                </p>
+                <p class="congrats-text">
+                    Choisissez simplement la bonne boîte cadeau.
+                </p>
+                <p class="congrats-text">
+                    Vous avez 3 essais, bonne chance !
+                </p>
                 <a href="javascript:void(0);" class="btn-main js-play--box">Ok</a>
             </div>
         </div>
@@ -1029,10 +1042,10 @@
                     <img src="images/off-win.svg" alt="sin premio">
                 </div>
                 <h2 class="congrats-title">
-    <strong>¡Dios mío...</strong>
+    <strong>Oh, mon Dieu...</strong>
 </h2>
 <p class="congrats-text">
-    Lo sentimos, esta caja está vacía. Pero todavía te quedan dos chances.<br>¡Buena suerte!
+    Désolé, cette boîte cadeau est vide. Mais vous avez encore deux autres chances.<br>Bonne chance !
 </p>
 <a href="javascript:void(0);" class="btn-main js-win--off">Ok</a>
 </div>
@@ -1042,21 +1055,21 @@
 <div class="loading-block" id="loading-block">
     <div class="loading-block--content">
         <h2 class="loading-title">
-            Se están verificando tus respuestas
-        </h2>
-        <div class="loading-img">
-            <div class="loading--gif"></div>
-        </div>
-        <ul class="loading-list">
-            <li class="loading-item">
-                ¡Has respondido 3/3 preguntas!
-            </li>
-            <li class="loading-item">
-                No hay duplicados con tu dirección IP.
-            </li>
-            <li class="loading-item">
-                Estás calificado.
-            </li>
+                Vos réponses sont vérifiées
+            </h2>
+            <div class="loading-img">
+                <div class="loading--gif"></div>
+            </div>
+            <ul class="loading-list">
+                <li class="loading-item">
+                    Vous avez répondu à 3/3 questions !
+                </li>
+                <li class="loading-item">
+                    Aucune entrée en double de votre adresse IP.
+                </li>
+                <li class="loading-item">
+                    Vous êtes qualifié.
+                </li>
             </ul>
         </div>
     </div>
