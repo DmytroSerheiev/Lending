@@ -548,6 +548,7 @@ body {
     outline: none;
     transition: .3s;
     margin: 0 auto;
+    border-radius:25px;
 }
 .winoff-block {
     display: none;
@@ -649,12 +650,12 @@ body {
     margin-bottom: 32px;
 }
 .congratulation-product--item {
-    cursor: pointer;
-    /* border: 2px solid transparent; */
+    /* cursor: pointer; */
+    border: 2px solid transparent;
     transition: .3s;
 }
 .congratulation-product--item.active {
-    border-color: #FF9439;
+    /* border-color: #FF9439; */
 }
 .congratulation-product--item img {
     width: 100%;
@@ -1197,4 +1198,30 @@ input[type=checkbox] {
 
 .custom-options li:hover {
   background: #f0f0f0;
+}
+.verified-purchase {
+    display: inline-block;
+    margin-top: 6px;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 12px;
+    line-height: 1;
+}
+@keyframes shake-box {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+}
+
+.box-shake {
+  animation: shake-box 1.2s ease-in-out infinite;
 }
