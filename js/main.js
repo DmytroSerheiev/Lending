@@ -235,71 +235,56 @@ $(document).ready(function () {
         email: "Proszę wpisać prawidłowy adres e-mail",
       },
       },
-    // розкаментувати👈👇
-    // submitHandler: function (form) {
-    //       let currentUrl = $(".btn-final").attr("href");
-    //   let currentUrlWithParams = addParamToUrl(
-    //     currentUrl,
-    //     "click_id3",
-    //     username.value
-    //   );
-    //   currentUrlWithParams = addParamToUrl(
-    //     currentUrlWithParams,
-    //     "click_id4",
-    //     lastname.value
-    //   );
-    //   currentUrlWithParams = addParamToUrl(
-    //     currentUrlWithParams,
-    //     "click_id5",
-    //     state.value
-    //   );
-    //   currentUrlWithParams = addParamToUrl(
-    //     currentUrlWithParams,
-    //     "j9",
-    //     zip.value
-    //   );
-    //   currentUrlWithParams = addParamToUrl(
-    //     currentUrlWithParams,
-    //     "j10",
-    //     city.value
-    //   );
-    //   currentUrlWithParams = addParamToUrl(
-    //     currentUrlWithParams,
-    //     "j11",
-    //     email.value
-    //   );
-    //   currentUrlWithParams = addParamToUrl(
-    //     currentUrlWithParams,
-    //     "j12",
-    //     phone.value
-    //   );
-    //   currentUrlWithParams = addParamToUrl(
-    //     currentUrlWithParams,
-    //     "j13",
-    //     address.value
-    //   );
+    submitHandler: function (form) {
+let currentUrl = $(".btn-final").attr("href");
 
-    //     $(".btn-final").attr("href", currentUrlWithParams);
+let currentUrlWithParams = addParamToUrl(
+  currentUrl,
+  "aff_unique1",
+  username.value
+);
+currentUrlWithParams = addParamToUrl(
+  currentUrlWithParams,
+  "aff_unique2",
+  lastname.value
+);
+currentUrlWithParams = addParamToUrl(
+  currentUrlWithParams,
+  "aff_unique3",
+  state.value
+);
+currentUrlWithParams = addParamToUrl(
+  currentUrlWithParams,
+  "aff_unique4",
+  zip.value
+);
+currentUrlWithParams = addParamToUrl(
+  currentUrlWithParams,
+  "aff_unique5",
+  city.value
+);
+currentUrlWithParams = addParamToUrl(
+  currentUrlWithParams,
+  "aff_sub3",
+  address.value
+);
+currentUrlWithParams = addParamToUrl(
+  currentUrlWithParams,
+  "aff_sub4",
+  email.value
+);
+currentUrlWithParams = addParamToUrl(
+  currentUrlWithParams,
+  "adv_sub",
+  phone.value
+);
 
-    //   setTimeout(function () {
-    //     window.location.href = $(".btn-final").attr("href");
-    //   }, 600);
-      // },
-    //розкаментувати👆
-    // закоментувати 👇
-      submitHandler: function (form) {
-      // Додаємо клас і спінер
-      const $button = $(form).find("button[type='submit']");
-      $button.addClass("btn-loading");
+$(".btn-final").attr("href", currentUrlWithParams);
 
-      // URL з параметрами, якщо потрібно
-      const url = $(".btn-final").attr("href");
-
-      setTimeout(function () {
-        window.location.href = url;
-      }, 1000); // для демонстрації затримки
+setTimeout(function () {
+  window.location.href = $(".btn-final").attr("href");
+}, 600);
       },
-    // закоментувати 👆
   });
 });
 //   ==================
