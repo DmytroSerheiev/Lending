@@ -848,64 +848,70 @@
                         <p class="basket-middle--price">19,99 MAD</p>
                     </div>
                 </div>
-                <p class="basket-notification">
-                  Veuillez remplir le formulaire de livraison ci-dessous : *adresses, numéros de téléphone, etc.
-                </p>
+<p class="basket-notification">
+    Veuillez remplir le formulaire de livraison ci-dessous : *adresses, numéros de téléphone, etc.
+</p>
 
+<div class="checkout-form">
+  <div class="form-card">
+    <form id="formRegister" class="form-grid" action="#" method="POST">
+      <div class="form-group">
+        <label for="username">Prénom</label>
+        <input type="text" class="form-point" id="username" name="username">
+      </div>
 
-                <div class="basket-block--bottom">
+      <div class="form-group">
+        <label for="lastname">Nom</label>
+    <input type="text" class="form-point" id="lastname" name="lastname">
+      </div>
 
-                    <form id="formRegister" class="form-list" action="#" method="POST">
-                        <div class="form-item">
-                            <label class="form-label" for="username">Prénom</label>
-                            <input type="text" class="form-point" id="username" name="username">
-                        </div>
+      <div class="form-group full-width">
+        <label for="address">Adresse</label>
+        <input type="text" class="form-point" id="address" name="address">
+      </div>
 
-                        <div class="form-item">
-                            <label class="form-label" for="lastname">Nom</label>
-                            <input type="text" class="form-point" id="lastname" name="lastname">
-                        </div>
+      <div class="form-group">
+        <label for="city">Ville</label>
+    <input type="text" class="form-point" id="city" name="city">
+      </div>
 
-                        <div class="form-item">
-                            <label class="form-label" for="address">Adresse</label>
-                            <input type="text" class="form-point" id="address" name="address">
-                        </div>
+      <div class="form-group">
+        <label for="state">Région</label>
+        <input type="text" class="form-point" id="state" name="state">
+      </div>
 
-                        <div class="form-item">
-                            <label class="form-label" for="city">Ville</label>
-                            <input type="text" class="form-point" id="city" name="city">
-                        </div>
+      <div class="form-group">
+        <label for="zip">Code Postal</label>
+        <input type="text" class="form-point" id="zip" name="zip">
+      </div>
 
-                        <div class="form-item">
-                            <label class="form-label" for="state">Région</label>
-                            <input type="text" class="form-point" id="state" name="state">
-                        </div>
+      <div class="form-group">
+        <label for="phone">Téléphone</label>
+        <input type="tel" class="form-point" id="phone" name="phone">
+      </div>
 
-                        <div class="form-item">
-                            <label class="form-label" for="zip">Code Postal</label>
-                            <input type="text" class="form-point" id="zip" name="zip">
-                        </div>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" class="form-point" id="email" name="email">
+      </div>
 
-                        <div class="form-item">
-                            <label class="form-label" for="phone">Numéro de téléphone</label>
-                            <input type="tel" class="form-point" id="phone" name="phone">
-                        </div>
+      <div class="form-group full-width checkbox">
+        <input type="checkbox" class="form-check" id="checks" name="checks">
+        <label for="checks" class="form-check--label">
+          <span></span>
+          J'accepte la politique de confidentialité et donne mon consentement
+          au traitement des données personnelles, commandes et retours.
+        </label>
+      </div>
 
-                        <div class="form-item">
-                            <label class="form-label" for="email">E-mail</label>
-                            <input type="email" class="form-point" id="email" name="email">
-                        </div>
-
-                        <div class="form-item">
-                            <input type="checkbox" class="form-check" id="checks" name="checks">
-                            <label for="checks" class="form-check--label">
-                                <span></span>
-                                J'accepte la politique de confidentialité et donne mon consentement au traitement des données personnelles, commandes et retours.
-                            </label>
-                        </div>
-                        <button type="submit" class="btn-main btn-main--arrow">Aller au paiement</button>
-                    </form>
-
+      <div class="form-group full-width text-center">
+        <button type="submit" class="btn-main btn-main--arrow">
+          Aller au paiement
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
                      <a href="{offer}" class="btn-final"></a>
 
                     <ul class="payment-list">
@@ -1084,6 +1090,10 @@
 
 
     <a href="javascript:void(0);" class="question-btn js-question--btn">?</a>
+
+
+
+
 
 
 
